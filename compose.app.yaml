@@ -1,0 +1,18 @@
+services:
+  test-app:
+    build:
+      context: ./app
+    environment:
+      LOKI_URL: http://loki:3100
+      APP_NAME: my_app
+    depends_on:
+      - loki
+    networks:
+      - monitoring
+    restart: unless-stopped
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m

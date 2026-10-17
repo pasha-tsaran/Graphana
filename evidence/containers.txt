@@ -1,0 +1,4 @@
+NAME                     IMAGE                    COMMAND                  SERVICE    CREATED             STATUS             PORTS
+grafana                  grafana/grafana:11.5.1   "/run.sh"                grafana    8 minutes ago       Up 8 minutes       0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+loki                     grafana/loki:3.5.0       "/usr/bin/loki -conf…"   loki       About an hour ago   Up About an hour   0.0.0.0:3100->3100/tcp, [::]:3100->3100/tcp
+lokigrafana-test-app-1   lokigrafana-test-app     "python main.py"         test-app   2 minutes ago       Up 2 minutes       

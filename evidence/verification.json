@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-10-17T14:24:05.726407+00:00",
+  "grafana_version": "11.5.1",
+  "loki_ready": true,
+  "datasource_url": "http://loki:3100",
+  "datasource_health": {
+    "message": "Data source successfully connected.",
+    "status": "OK"
+  },
+  "dashboard_uid": "my-app-logs",
+  "dashboard_panels": [
+    "table",
+    "piechart"
+  ],
+  "dashboard_refresh": "5s",
+  "log_count_last_15_minutes": 161,
+  "levels": [
+    "DEBUG",
+    "ERROR",
+    "INFO",
+    "WARNING"
+  ],
+  "sender_roundtrip_utf8": true,
+  "grafana_panel_data": {
+    "table": {
+      "frames": 1,
+      "rows": 161
+    },
+    "piechart": {
+      "frames": 4,
+      "rows": 4
+    }
+  },
+  "status": "passed"
+}
